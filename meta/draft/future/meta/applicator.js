@@ -30,6 +30,15 @@ module.exports = `{
                 "$dynamicRef": "#meta"
             }
         },
+        "propertyDependencies": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "object",
+                "additionalProperties": { "$dynamicRef": "#meta" },
+                "default": {}
+            },
+            "default": {}
+        },
         "propertyNames": { "$dynamicRef": "#meta" },
         "if": { "$dynamicRef": "#meta" },
         "then": { "$dynamicRef": "#meta" },
