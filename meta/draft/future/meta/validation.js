@@ -45,6 +45,7 @@ module.exports = `{
         "maxProperties": { "$ref": "#/$defs/nonNegativeInteger" },
         "minProperties": { "$ref": "#/$defs/nonNegativeIntegerDefault0" },
         "required": { "$ref": "#/$defs/stringArray" },
+        "optional": { "$ref": "#/$defs/stringArray" },
         "dependentRequired": {
             "type": "object",
             "additionalProperties": {
